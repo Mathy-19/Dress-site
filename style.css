@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ html{
+    font-size:22px;
+}
+body{
+    background-color:aquamarine;
+} 
+.btn-group{
+    max-width: 1299px;
+    margin: 10px auto;
+    display:flex;
+    justify-content: space-between;
+
+}
+.btn-item{
+    display: flex;
+    
+
+}
+.btn {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    border:2px solid purple;
+    padding: 5px 15px;
+    font-size:0.7rem;
+    width:100px;
+    background-color: plum;
+}
+.btn-clicked{
+    background-color:transparent;
+}
+#search{
+    width:200px;
+    height:30px;
+    padding:10px;
+    outline:none;
+    border:2px solid purple;
+    font-size:0.7rem;
+}
+.container{
+    max-width: 1200px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:2rem;
+    margin:10px auto;
+}
+.box{
+    overflow: hidden;
+    height:300px;
+    border:2px solid white;
+}
+.box img{
+    height:100%;
+    width:100%;
+    transform-origin: top;
+    transition: 0.3s linear;
+    object-fit: cover;
+}
+.box img:hover{
+    transform: scale(1.5);
+} 
